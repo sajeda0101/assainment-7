@@ -10,8 +10,22 @@ const Blog = () => {
             </div>
             <div className='title'>
                 <h3>Difference between props and State?</h3>
-                <p><strong>Props:</strong><ul><li>Components receive data from outside with props.</li><li>Props are used to pass data.</li><li>Data from props is read-only.</li><li>Props can only be passed from parent component to child.</li></ul></p>
-                <p><strong>State:</strong><ul><li>whereas they can create and manage their own data with state.</li><li>whereas state is for managing data.</li><li>State data can be modified by its own component, but is private.</li><li>Modifying state should happen with the setState ( ) method.</li></ul></p>
+                <p><strong>Props:</strong>
+                <ul>
+                    <li>Components receive data from outside with props.</li>
+                    <li>Props are used to pass data.</li>
+                    <li>Data from props is read-only.</li>
+                    <li>Props can only be passed from parent component to child.</li>
+                    </ul>
+                    </p>
+                <p><strong>State:</strong>
+                <ul>
+                    <li>whereas they can create and manage their own data with state.</li>
+                    <li>whereas state is for managing data.</li>
+                    <li>State data can be modified by its own component, but is private.</li>
+                    <li>Modifying state should happen with the setState ( ) method.</li>
+                    </ul>
+                </p>
             </div>
             <div className='title'>
                 <h3>How work useEffect?</h3>
@@ -19,8 +33,17 @@ const Blog = () => {
             </div>
             <div className='title'>
                 <h3>React hook list</h3>
-                <p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.<ul>
-                    <li>useState</li><li>useEffect</li><li>useContext</li><li>useCallback</li><li>useReducer</li><li>useRef</li><li>useImperativeHandle etc.</li></ul></p>
+                <p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+                    <ul>
+                    <li>useState</li>
+                    <li>useEffect</li>
+                    <li>useContext</li>
+                    <li>useCallback</li>
+                    <li>useReducer</li>
+                    <li>useRef</li>
+                    <li>useImperativeHandle etc.</li>
+                    </ul>
+                    </p>
             </div>
 
         </div>

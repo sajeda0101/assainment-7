@@ -3,6 +3,7 @@ import './Activities.css'
 
 
 const Activities = (props) => {
+    // console.log(props)
    
     const {name,img,breakTime}=props.activities
     
@@ -17,7 +18,7 @@ const Activities = (props) => {
                 <p></p>
                 <p>Break:{breakTime} min</p>
             </div>
-                <button onClick={props.handleAddToCart}>Add to List 
+                <button onClick={()=>props.handleAddToCart(props.activities)}>Add to List 
                 </button>
         </div>
     );

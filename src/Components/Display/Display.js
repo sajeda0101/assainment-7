@@ -1,9 +1,11 @@
+import { faListSquares } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import Activities from '../Activities/Activities';
 import Cart from '../Cart/Cart';
 import './Display.css'
 
 const Display = () => {
+    const [list,setList]=useState([])
   
     const [activities,setActivities]=useState([]);
     useEffect(()=>{
@@ -12,9 +14,11 @@ const Display = () => {
         .then(data=>setActivities(data))
     },[])
 
-    const [cart,setCart]=useState([])
-    const handleAddToCart=(activity)=>{
-       console.log(activity.age)
+    
+    const handleAddToCart=(activities)=>{
+     
+        const newList=[...list,activities]
+        setList(newList)
     }
  
     return (
@@ -34,7 +38,7 @@ const Display = () => {
            
             </div>
             <div className="cart-activities">
-               <Cart cart={cart}></Cart>
+               <Cart activities={list}></Cart>
             </div>
         </div>
     );

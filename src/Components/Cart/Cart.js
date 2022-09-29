@@ -1,7 +1,7 @@
 import React from 'react';
 import img from '../../images/images.jpg'
 import './Cart.css'
-const Cart = ({cart}) => {
+const Cart = ({list}) => {
    
     
     
@@ -20,21 +20,17 @@ const Cart = ({cart}) => {
                 <p><strong>Weight:</strong>38kg</p></div>
                 </div>
                 </div>
-               
-                <h4 className='text'>Add break time</h4>
-               <div className='btn'>
+               <div className='break-btn'>
+                <h3>Add break time</h3>
                 <button >10min</button>
-                <button>15min</button>
-                <button>20min</button>
-                <button>5min</button>
-                <button>7min</button>
                </div>
-               <div className='activity-info'>
-                <h2>Activities Details</h2>
-                <p>Activities time: <span className='time'>min</span></p>
-                <p>Break time: <span className='time' >min</span> </p>
+               <div className='activity-time'>
+                <h3>Activities Details</h3>
+                <p>Activities Time:</p>
+                <p>Break Time:</p>
                </div>
-               <button className='btn-cart' >Activity Completed</button>
+               
+              <div className='btn-cart'> <button  >Activity Completed</button></div>
         </div>
     );
 };

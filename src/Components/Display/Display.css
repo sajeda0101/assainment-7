@@ -32,6 +32,21 @@ background-color: rgb(252, 250, 250);
     }
 }
 
-@media screen and (min-width:778px) and (max-width:1023px){
+@media screen and (min-width:768px) and (max-width:1023px){
+    .activities{
+        display: grid;
+        grid-template-columns:2fr,1fr;
+        position: sticky;
+
+    }
+    .activities-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
     
+    .text{
+        font-size: 12px;
+        margin-left: 50px;
+        text-align: center;
+    }
 }
