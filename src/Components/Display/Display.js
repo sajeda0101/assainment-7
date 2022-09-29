@@ -9,6 +9,10 @@ const Display = () => {
         .then(res=>res.json())
         .then(data=>setActivities(data))
     },[])
+
+    const handleAddBreak=()=>{
+        console.log('click')
+    }
     return (
         <div className='activities'>
            
@@ -24,6 +28,20 @@ const Display = () => {
                 <h3 className='title'>Web developer</h3>
                 </div>
                
+                <h4 className='text'>Add break time</h4>
+               <div className='btn'>
+                <button handleAddBreak={handleAddBreak}>10min</button>
+                <button>15min</button>
+                <button>20min</button>
+                <button>5min</button>
+                <button>7min</button>
+               </div>
+               <div className='activity-info'>
+                <h2>Activities Details</h2>
+                <p>Activities time: <span className='time'>min</span></p>
+                <p>Break time: <span className='time' >min</span> </p>
+               </div>
+               <button className='btn-cart'>Activity Completed</button>
             </div>
         </div>
     );

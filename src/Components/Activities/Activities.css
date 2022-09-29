@@ -15,10 +15,12 @@
 .detail{
     margin-left: 20px;
 }
-.detail button{
-    background-color: #6a6afa;
-    width: 90%;
+.activities button{
+    width: 100%;
+    font-size: 22px;
+    padding: 5px;
+    background-color: mediumslateblue;
+    border:none;
+    border-radius: 5px;
     color: white;
-    font-size: 16px;
-    margin:10px;
 }

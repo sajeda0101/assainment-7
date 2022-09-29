@@ -12,8 +12,8 @@ const Activities = (props) => {
                 <p>{name}</p>
                 <p>Age:{age} year</p>
                 <p>Break:{breakTime} min</p>
-                <button><p>Add to List</p></button>
             </div>
+                <button>Add to List</button>
         </div>
     );
 };
