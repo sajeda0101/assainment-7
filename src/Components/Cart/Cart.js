@@ -2,20 +2,18 @@ import React from 'react';
 import img from '../../images/images.jpg'
 import './Cart.css'
 const Cart = ({cart}) => {
-    let time=0;
-    for(const activity of cart){
-        time=time+activity.breakTime;
-        // console.log(time)
-    }
+   
+    
     
     return (
         <div className='cart'>
-            <h1>activities:{cart.length}</h1>
+        
              <div className='info'>
                 <img src={img} alt="" />
                 <div>
-                <h3>Sajeda Akter</h3>
-                <p className='title'>Web developer</p>
+                <h3>Name:Sajeda Akter</h3>
+                <p>Study:Diploma in CSE completed</p>
+                <p>Age:20</p>
                 </div>
                 </div>
                

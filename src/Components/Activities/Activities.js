@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Activities.css'
 
+
 const Activities = (props) => {
    
     const {name,img,breakTime}=props.activities
@@ -16,7 +17,8 @@ const Activities = (props) => {
                 <p></p>
                 <p>Break:{breakTime} min</p>
             </div>
-                <button onClick={props.handleAddToCart}>Add to List</button>
+                <button onClick={props.handleAddToCart}>Add to List 
+                </button>
         </div>
     );
 };
