@@ -5,7 +5,7 @@ import './Activities.css'
 const Activities = (props) => {
     // console.log(props)
    
-    const {name,img,breakTime}=props.activities
+    const {name,img,breakTime,title}=props.activities
     
 
    
@@ -15,8 +15,8 @@ const Activities = (props) => {
             <img src={img} alt="" />
             <div className='detail'>
                 <p className='activity-name'>{name}</p>
-                <p></p>
-                <p>Break:{breakTime} min</p>
+                <p className='pera'>{title}</p>
+                <p>Break:{breakTime} days</p>
             </div>
                 <button onClick={()=>props.handleAddToCart(props.activities)}>Add to List 
                 </button>

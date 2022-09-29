@@ -26,18 +26,41 @@
         
     }
     .break-btn{
-        height: 100px;
-        background-color: pink;
-        color: blue;
+        margin-top: 50px;
     }
-    .break-btn button{
+    .break-btn h3{
+        text-align: center;
+    }
+    .all-btn{
+       
+        display: flex;
+        align-items: center;
+        
+    }
+    .button{
         color: black;
+    }
+    .all-btn p{
+        background-color:pink;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 5px 10px;
+        
     }
     .activity-time{
         margin-top: 60px;
+        margin-left: 30px;
+    }
+    .activity-time h3{
+        text-align: center;
+    }
+    .activity-time p{
+        font-size: 20px;
     }
     .btn-cart{
-      margin-top: 100px;
+      margin-top: 500px;
       height: 60px;
     }
     

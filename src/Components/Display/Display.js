@@ -32,13 +32,10 @@ const Display = () => {
                 activities.map(activity=><Activities activities={activity} key={activity.id}  handleAddToCart={handleAddToCart}></Activities>)
             }
                 </div>
-            
-        
-             
            
             </div>
             <div className="cart-activities">
-               <Cart activities={list}></Cart>
+               <Cart list={list}></Cart>
             </div>
         </div>
     );
