@@ -4,6 +4,7 @@ import Cart from '../Cart/Cart';
 import './Display.css'
 
 const Display = () => {
+  
     const [activities,setActivities]=useState([]);
     useEffect(()=>{
         fetch('activities.json')
@@ -11,17 +12,29 @@ const Display = () => {
         .then(data=>setActivities(data))
     },[])
 
+    const [cart,setCart]=useState([])
+    const handleAddToCart=(activity)=>{
+       console.log(activity.age)
+    }
  
     return (
         <div className='activities'>
            
-            <div className="activities-container" >
-            {
-                activities.map(activity=><Activities activities={activity} key={activity.id}></Activities>)
+                
+            <div >
+                <div className='text'><h1 >Our Activities Scheme</h1></div>
+                <div className="activities-container">
+                {
+                activities.map(activity=><Activities activities={activity} key={activity.id}  handleAddToCart={handleAddToCart}></Activities>)
             }
+                </div>
+            
+        
+             
+           
             </div>
             <div className="cart-activities">
-               <Cart></Cart>
+               <Cart cart={cart}></Cart>
             </div>
         </div>
     );
