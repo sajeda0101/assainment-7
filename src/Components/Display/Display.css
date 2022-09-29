@@ -16,13 +16,22 @@ background-color: rgb(252, 250, 250);
    margin-left: 100px;
 }
 
-@media screen and (max-width:776px) {
+@media screen and (max-width:767px) {
     .activities{
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:repeat(2,1fr);
     }
     .activities-container{
         display: grid;
         grid-template-columns: 1fr;
+        width: 200px;
     }
+    .text{
+        font-size: 10px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width:778px) and (max-width:1023px){
+    
 }
