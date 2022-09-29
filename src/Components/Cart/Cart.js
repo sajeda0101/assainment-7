@@ -11,9 +11,13 @@ const Cart = ({cart}) => {
              <div className='info'>
                 <img src={img} alt="" />
                 <div>
-                <h3>Name:Sajeda Akter</h3>
+                <p><strong>Name:</strong>Sajeda Akter</p>
+                <p><strong>Institute:</strong>Chittagong Polytechnic Institute</p>
                 <p>Study:Diploma in CSE completed</p>
-                <p>Age:20</p>
+                <div className='my-info'>
+                <p><strong>Age:</strong>20</p>
+                <p><strong>Height:</strong>5.2"</p>
+                <p><strong>Weight:</strong>38kg</p></div>
                 </div>
                 </div>
                
