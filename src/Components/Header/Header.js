@@ -6,7 +6,7 @@ const Header = () => {
     
     return (
         <div className="header">
-<h1><FontAwesomeIcon icon={faTree} className="fachange"></FontAwesomeIcon>
+      <h1 className='header-title'><FontAwesomeIcon icon={faTree} className="fachange"></FontAwesomeIcon>
         Save World</h1>
           <nav>
             <ul>

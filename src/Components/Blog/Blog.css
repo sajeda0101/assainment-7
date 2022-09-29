@@ -12,3 +12,13 @@
     margin-right: 30px;
     margin-top: 15px;
 }
+
+@media screen and (max-width:776px) {
+    .blog{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin:90px 20px;
+        padding-left: 30px;
+    }
+    
+}

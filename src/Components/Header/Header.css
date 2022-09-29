@@ -32,3 +32,20 @@ nav ul li a:hover{
     border-radius: 5px;
     padding:7px 15px;
 }
+@media  screen and (max-width:776px) {
+    .header{
+        width: 65%;
+       height: 200px;
+    }
+    .fachange{
+        margin-right: 20px;
+        font-size: 40px;
+    }
+    .header-title{
+        display: flex;
+        align-items: center;
+        padding-right: 90px;
+        font-size: 25px;
+    }
+    
+}
